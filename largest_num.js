@@ -5,18 +5,17 @@ prompt('Soke');
 //Write a function that takes an array of numbers and returns the largest number in the array.
 
 // This is the Pseudocode
-//- we set a function of largestArray to it's prim array.
-//- we set a variable of largestNumber to the first index of the array.
-//- we set a FOR loop by initializing index to 1 and set a condition of the length of am array greater than index and increment index.
-//- we set am IF statement of index of array greater than largestNumber, and equalize both.
-//- we return largestNumber.
+//- Define an array of numbers
+//- Initialize a variable to hold the largest number
+//- Loop through the array and compare each number to the largest number
+//- Finally return the result
 
 // the code.
-function largestArray(array) {
-    let largestNumber = array[0];
-    for (let i = 1; i < array.length; i++)
-      if (array[i] > largestNumber)
-        largestNumber = array[i];
+function largestArray(numArray) {
+    let largestNumber = numArray[0];
+    for (let i = 1; i < numArray.length; i++)
+      if (numArray[i] > largestNumber)
+        largestNumber = numArray[i];
     return largestNumber;
   }
   
