@@ -1,5 +1,6 @@
 alert('hello world');
 prompt('Soke');
+prompt('Soke');
 
 //Exercise(5) number one(1)
 //Write a function that takes an array of numbers and returns the largest number in the array.
