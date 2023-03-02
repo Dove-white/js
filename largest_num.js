@@ -58,13 +58,13 @@ console.log(stringCapitalized(array));
 // -Finally return count
 
 const sentence = 'my name is somebody';
-function arrayOfVowels(numOfVowels) {
+function numberOfVowels(word) {
     let count = 0;
-    for (let i = 0; i < numOfVowels.length; i++){
-    let method = numOfVowels[i].toLowerCase();
+    for (let i = 0; i < word.length; i++){
+    let method = word[i].toLowerCase();
     if (method === 'a'|| method === 'e'|| method === 'i'|| method === 'o' || method === 'u')
      count += 1;
   }
   return count;
 }
-console.log(arrayOfVowels(sentence));
+console.log(numberOfVowels(sentence));
