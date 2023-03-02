@@ -62,7 +62,7 @@ function arrayOfVowels(numOfVowels) {
     let count = 0;
     for (let i = 0; i < numOfVowels.length; i++){
     let method = numOfVowels[i].toLowerCase();
-    if (method === 'm'|| method === 'o'|| method === 'e'|| method === 'y')
+    if (method === 'a'|| method === 'e'|| method === 'i'|| method === 'o' || method === 'u')
      count += 1;
   }
   return count;
