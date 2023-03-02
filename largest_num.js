@@ -31,3 +31,40 @@ function stringArgument() {
 }
 const array = ['do','go','come'];
 console.log(stringArgument(array));
+
+//Exercise(6) number one(1)
+//Write a function that takes an array of strings and returns a new array with all the strings capitalized.
+// -Define an array of strings (exercise(5) number one(1))
+// -Loop through with arguments
+//- Initialize a variable to hold an Uppercase method
+// -Finally return the result with a map method to hold the variable
+
+function stringCapitalized() {
+    for (let valueOfStrings of arguments) {
+      const capitalized = name => name.toUpperCase();
+    return valueOfStrings.map(capitalized);
+  }
+}
+console.log(stringCapitalized(array));
+
+//Exercise(6) number two(2)
+//Write a function that takes a string as an argument and returns the number of vowels in the string.
+// -Define string
+// -Initialized a count variable to zero(0)
+// -Loop through the string
+// -Initialized a variable to hold the string with lowerCase method 
+// -An IF statements to compare vowels
+// -Assign count +1
+// -Finally return count
+
+const sentence = 'my name is somebody';
+function arrayOfVowels(numOfVowels) {
+    let count = 0;
+    for (let i = 0; i < numOfVowels.length; i++){
+    let method = numOfVowels[i].toLowerCase();
+    if (method === 'm'|| method === 'o'|| method === 'e'|| method === 'y')
+     count += 1;
+  }
+  return count;
+}
+console.log(arrayOfVowels(sentence));
