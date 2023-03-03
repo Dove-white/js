@@ -5,12 +5,10 @@
 // -Loop through with argument
 // -Finally return variable with filter method
 
-let numbers = [1, 2, 3, 4, 5, 6]
+const numbers = [1, 2, 3, 4, 5, 6,7,8,9,10,11,12,13];
 
-function evenNumbers(){
-  const evenMethod = n => n % 2 === 0 ;
-  for (let number of arguments)
-  return number.filter(evenMethod);  
+function evenNumbers(num){
+  return num.filter(number => number % 2 === 0);
 }
 
 console.log(evenNumbers(numbers));
