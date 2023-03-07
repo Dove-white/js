@@ -7,6 +7,6 @@
 const numbers = [10,15,17,31];
 function totalSum(num) {
   const divBy5Or2 = num.filter(number => (number % 3 === 0) || (number % 5 === 0));
-  return divBy5Or2.reduce((divBy5,divBy2) => divBy5+divBy2);
+  return divBy5Or2.reduce((sum,currentValue) => sum+currentValue);
 }
 console.log(totalSum(numbers));
