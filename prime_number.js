@@ -1,8 +1,13 @@
 //Write a function to check if a number is prime.
-// -Return the number divisible by 2 reminder one or number equal to two.
+// -Loop through the number to include two
+// -Set an IF statement to return not prime, if number divisible by index. 
+// -Finally return true.
 
 function primeNum(num) {
-    return (num % 2 === 1 || num === 2);
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) return 'notPrime';
+    }
+    return 'prime';
 }
 
-console.log(primeNum(27));
+console.log(primeNum(2));
