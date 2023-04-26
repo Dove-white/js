@@ -22,6 +22,25 @@ function calculateGrade(scores){
     if (average >= 40) return 'D';
     else return 'T';
  }
+
+ // another method.
+
+// function calculateGrade(grade) {
+//     let gNote = gradeNote(grade);  
+//     if (gNote >= 90) return "O";
+//     if (gNote >= 80) return "E";
+//     if (gNote >= 70) return "A";
+//     if (gNote >= 55) return "P";
+//     if (gNote >= 40) return "D";
+//     else return "T";
+// }
+
+// function gradeNote(score) {
+//   let sum = 0;
+//   for (let num of score) sum += num;
+//   return sum / score.length;
+// }
+
  
  console.log(calculateGrade([80, 90, 95, 87]));
  console.log(calculateGrade([75, 85, 80, 90]));
