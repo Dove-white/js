@@ -14,4 +14,15 @@ function averageNum(num) {
   }   
 }
 
+
+// another method without the reduce method.
+// function averageNum(num) {
+//   let sun = 0;
+//   for (let value of num)
+//   sun += value;
+//   return sun / num.length;
+// }
+
+// console.log(averageNum(numbers))
+
 console.log(averageNum(numbers));
