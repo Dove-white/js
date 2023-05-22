@@ -7,54 +7,59 @@ A JavaScript program that models a library, and should have a function that will
 -Initialize a variable to hold the element and add it to array of object with push method.
 
 // For removing
--Initialize another variable to hold one of the value in the object to remove with a filter method to return not equal to the value.
+-Define a variable to hold a filter method with a callback function to compar.
+-Finally print the variable on the console with a forEach method.
+
+// For counting
+-Print the variable of the program with the length syntax on the console.
 
 // For listing
 -Define a callback function with the forEach method.
--Finally print the callback.
-
-// For counting
--Initialize a variable to hold a push method and finally print the variable.
+-Loop through with a for in loop and finally return properties with the property values.
 */
 
 let library = [
   {
+    id: 0,
     title: "At The Heart Of Leadership",
     author: "Joshua Freedman",
-    yearOfPublication: 2019,
+    yearOfPublication: 2019
   },
   {
+    id: 1,
     title: "Forgive Yourself These Tiny Acts Of Self-Destruction",
     author: "Jared Singer",
     yearOfPublication: 2007,
   },
   {
+    id: 2,
     title: "Being The Best Version Of You",
     author: "Charlotte Moore",
     yearOfPublication: 2010,
   },
-  { title: "The Future", author: "Neil Hilborn", yearOfPublication: 2018 },
+  { id: 3, title: "The Future", author: "Neil Hilborn", yearOfPublication: 2018 },
 ];
 
 // For adding
 let bookAdded = {
+  id: 4,
   title: "You Better Be Lighting",
   author: "Andrea Gibson",
   yearOfPublication: 2015,
 };
 library.push(bookAdded);
-console.log(library);
 
 // For removing
-const propertiesRemove = "The Future";
-const removeMethod = library.filter(
-  (properties) => properties.title !== propertiesRemove
+const filterBooks = library.filter(
+  (book) => book.id === 1
 );
-console.log(removeMethod);
+filterBooks.forEach(book => console.log(book));
 
 // For counting
-let numberOfBooks = library.push();
-console.log("There are " + numberOfBooks + " books in the library");
+console.log("There are " + library.length + " books in the library");
 
 // For listing
-library.forEach((properties) => console.log(properties));
+library.forEach((books) => {
+  for(let properties in books)
+  console.log(properties + ': ' + books[properties]);
+});
