@@ -41,13 +41,13 @@ let library = [
 ];
 
 // For adding
-let bookAdded = {
+let singleBook = {
   id: 4,
   title: "You Better Be Lighting",
   author: "Andrea Gibson",
   yearOfPublication: 2015,
 };
-library.push(bookAdded);
+library.push(singleBook);
 
 // For removing
 const filterBooks = library.filter(
@@ -59,7 +59,7 @@ filterBooks.forEach(book => console.log(book));
 console.log("There are " + library.length + " books in the library");
 
 // For listing
-library.forEach((books) => {
-  for(let properties in books)
-  console.log(properties + ': ' + books[properties]);
+library.forEach((book) => {
+  for(let properties in book)
+  console.log(properties + ': ' + book[properties]);
 });
