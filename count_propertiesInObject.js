@@ -21,7 +21,7 @@ NOTE:
 */
 
 // -Define an object
-// -Initialize a variable to hold the number zero
+// -Initialize a variable to hold the count
 // -Initialize another variable to hold an empty array
 // -Loop with a for in loop
 // -Push properties into the second variable and add it's length to the first variable
@@ -35,11 +35,11 @@ const person = {
 };
 
 
-function countObjectProperties(person) {
+function countObjectProperties(obj) {
     let sum = 0;
     let emptyArray = [];
 
-    for(let key in person)
+    for(let key in obj)
     emptyArray.push(key);
 
     return sum += emptyArray.length;
