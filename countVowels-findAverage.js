@@ -14,7 +14,7 @@
  // -Am IF statement to compare vowels with the second variable and add it to count
  // -Finally return count
 
- const aboutMe = "I am a Developer";
+ const sentence = "I am a Developer";
 
  function countVowels(sentence) {
    let count = 0;
@@ -35,7 +35,7 @@
    return count;
  }
  
- console.log(countVowels(aboutMe));
+ console.log(countVowels(sentence));
  
  
  
