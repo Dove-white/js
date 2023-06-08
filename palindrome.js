@@ -8,21 +8,26 @@ and backwards), and false otherwise. For example, if the input is
 
 // -Define a string
 // -Loop through with arguments to hold the string
+// -Change string to lower case with it's method
+// -Remove space in value with replaceAll method
 // -Split the string with a split method
 // -Reverse the already split sting with reverse method (palindrome in backward)
 // -Initialize a variable to hold the reverse without splitting it
 // -Finally compare the variable with the string to return a boolean
 
-let word = "racecar";
+let InputValue = "Taco cat";
 
-function isPalindrome() {
+function isPalindrome(str) {
   for (let value of arguments) {
-    let splitValue = value.split("");
+    let toLowerCaseValue = value.toLowerCase();
+    let removeSpaceInValue = toLowerCaseValue.replaceAll(' ','');
+    let splitValue = toLowerCaseValue.split("");
     let revereSplitValue = splitValue.reverse();
     let removeSplit = revereSplitValue.join("");
+    let removeSpaceInReverseValue = removeSplit.replaceAll(' ','');
 
-    return removeSplit === value;
+    return removeSpaceInReverseValue === removeSpaceInValue;
   }
 }
 
-console.log(isPalindrome(word));
+console.log(isPalindrome(InputValue));
